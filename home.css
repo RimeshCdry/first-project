@@ -16,6 +16,14 @@ header{
     height: 100px;
     width: 100%;
     /* background-color: whitesmoke; */
+    background-color: #E3E1D9;   
+}
+
+
+header{
+    height: 100px;
+    width: 100%;
+    /* background-color: whitesmoke; */
     background-color: #E3E1D9;
     
 }
@@ -26,6 +34,9 @@ header{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+.nav-1 p{
+    display: none;
 }
 .nav-1 .icon{
     height: 60px;
@@ -55,7 +66,6 @@ header{
     display: flex;
     align-items: center;
     gap: 20px;
-    /* background-color: blue; */
 }
 
 
@@ -68,10 +78,7 @@ header{
     border-radius: 12px;
     border: none;
     outline: none;
-    /* padding: 10px; */
     background-color: rgb(197, 211, 224);
-    /* top: 0;
-    right: 0; */
 }
 
 .nav-1 .btn form input{
@@ -99,6 +106,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.nav-2 ol{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
     gap: 50px;
 }
 
@@ -114,6 +127,95 @@ header{
     /* color: rgb(84, 84, 205); */
     color: rgb(187, 116, 116);
 }
+@media(max-width:412px){
+    
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        width: 100%;
+        /* height: 40px; */
+    }
+    .nav-1{
+        height: 60px;
+        width: 100%;
+        display: flex;
+    } 
+
+    .nav-1 .icon{
+        display: none;
+    }
+
+    .nav-1 h1{
+        font-size: 30px;
+        font-family: sans-serif;
+         /* margin-left: 150px; */
+        /* margin-right: 200px;  */
+    }
+    .nav-1 .btn{
+
+        height: 40px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        display: none; 
+    }
+    .nav-1 .btn form {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 28px;
+        width: 100px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        background-color: rgb(197, 211, 224);
+    }
+
+    .nav-1 .btn form input{
+        display: none;
+        border: none;
+        outline: none;
+        height: 38px;
+        width: 100px;
+        border-radius: 12px;
+        padding-left: 15px;
+        background-color: rgb(197, 211, 224);;
+    }
+
+    .nav-1 .btn form i{
+        position: absolute;
+        padding-right: 7px;
+        right: 0;
+        font-size: 10px;
+    }
+
+    .nav-2{
+        width: 100%;
+    }
+    .nav-2 ol{
+        position: fixed;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        gap: 15px;
+    }
+    .nav-2 ol li a{
+        font-size: 11px;
+        font-family: "Rubik",sans-serif;
+    }
+
+
+    main, footer{
+        display: none;
+    }
+}
+
+
+/* Content */
 main{
     height: 2800px;
     /* background-color: blue; */
@@ -135,8 +237,8 @@ section{
     padding: 25px;
 }
 .content-1 .banner figure img{
-    width: 1000px;
-    height: 500px;
+    width: 1200px;
+    height: 550px;
     object-fit: cover;
     object-position: center;
     border: hidden;
@@ -145,27 +247,28 @@ section{
 
 .content-1 .pictures{
     margin-top: 25px;
-    /* background-color: #FEECE2; */
-    /* width: 100%; */
-    height: 650px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 45px;
+    gap: 120px;
 }
 .content-1 .pictures .box-1{
     background-color: #F4EDCC;
-    width: 480px;
-    padding: 5px;
+    width: 520px;
+    padding: 10px;
 }
 .content-1 .pictures .box-1 figure img{
     height: 520px;
-    width: 470px;
+    width: 500px;
     border: hidden;
     border-radius: 9px;
     object-fit: cover;
     object-position: center;
 } 
+.content-1 .pictures  figure figcaption{
+    padding: 15px;
+}
 .content-1 .pictures .box-1 figure figcaption label a{
     font-family: sans-serif;
     font-size: 20px;
@@ -174,12 +277,13 @@ section{
     text-decoration: none;
 }
 .content-1 .pictures .box-1 figure figcaption p{
-    margin-top: 5px;
+    margin-top: 22px;
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
 .content-1 .pictures .box-1 figure figcaption .readmore{
+    margin-top: 24px;
     display: flex;
     align-items: center;
     gap: 290px;
@@ -208,17 +312,17 @@ section{
 
 .content-1 .pictures .box-2{
     background-color: #F4EDCC;
-    width: 480px;
-    padding: 5px;
+    width: 520px;
+    padding: 10px;
 }
 
 .content-1 .pictures .box-2 figure img{
     height: 520px;
-    width: 470px;
+    width: 500px;
     border: hidden;
     border-radius: 9px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
 
 .content-1 .pictures .box-2 figure figcaption label a{
@@ -229,12 +333,13 @@ section{
     text-decoration: none;
 }
 .content-1 .pictures .box-2 figure figcaption p{
-    margin-top: 5px;
+    margin-top: 22px;
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
 .content-1 .pictures .box-2 figure figcaption .readmore{
+    margin-top: 24px;
     display: flex;
     align-items: center;
     gap: 290px;
@@ -297,7 +402,9 @@ section{
     font-family: "PT Sans", sans-serif;
     text-align: justify;
 }
-
+.content-2 .box-1 .disc{
+    text-align: justify;
+}
 .content-2 .box-1 .disc .icon{
     display: flex;
     align-items: center;
@@ -358,9 +465,11 @@ section{
     border: hidden;
     border-radius: 9px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
-
+.content-2 .box-2 .disc{
+    text-align: justify;
+}
 .content-2 .box-2 .disc label strong{
     font-size: 30px;
     font-weight: 700;
@@ -408,12 +517,13 @@ section{
     border: hidden;
     border-radius: 9px;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 
 /* footer */
 footer{
+    margin-top: 100px;
     background-color: #E3E1D9;
 }
 .footer-top{

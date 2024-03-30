@@ -100,6 +100,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.nav-2 ol{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
     gap: 50px;
 }
 
@@ -114,6 +120,91 @@ header{
 .nav-2 a:hover{
     /* color: rgb(84, 84, 205); */
     color: rgb(187, 116, 116);
+}
+@media(max-width:412px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        width: 100%;
+        /* height: 40px; */
+    }
+    .nav-1{
+        height: 60px;
+        width: 100%;
+        display: flex;
+    } 
+
+    .nav-1 .icon{
+        display: none;
+    }
+
+    .nav-1 h1{
+        font-size: 30px;
+        font-family: sans-serif;
+         /* margin-left: 150px; */
+        /* margin-right: 200px;  */
+    }
+    .nav-1 .btn{
+
+        height: 40px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        display: none; 
+    }
+    .nav-1 .btn form {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 28px;
+        width: 100px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        background-color: rgb(197, 211, 224);
+    }
+
+    .nav-1 .btn form input{
+        display: none;
+        border: none;
+        outline: none;
+        height: 38px;
+        width: 100px;
+        border-radius: 12px;
+        padding-left: 15px;
+        background-color: rgb(197, 211, 224);;
+    }
+
+    .nav-1 .btn form i{
+        position: absolute;
+        padding-right: 7px;
+        right: 0;
+        font-size: 10px;
+    }
+
+    .nav-2{
+        width: 100%;
+    }
+    .nav-2 ol{
+        position: fixed;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        gap: 15px;
+    }
+    .nav-2 ol li a{
+        font-size: 11px;
+        font-family: "Rubik",sans-serif;
+    }
+
+
+    main, footer{
+        display: none;
+    }
 }
 
 main{
@@ -146,7 +237,7 @@ main{
 }
 
 .content-2{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .content-2 ul{
     display: flex;
@@ -177,7 +268,18 @@ strong{
     object-fit: cover;
     object-position: top;
 }
+video{
+    margin-left: 280px;
+    height: 450px;
+    width: 950px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
+
+
+
+/* footer */
 footer{
     background-color: #E3E1D9;
 }

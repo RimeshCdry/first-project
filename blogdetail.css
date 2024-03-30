@@ -99,10 +99,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.nav-2 ol{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
     gap: 50px;
-    @media (max-width: 746px ) {
-        display: none;
-    }
 }
 
 .nav-2 a{
@@ -118,8 +121,152 @@ header{
     color: rgb(187, 116, 116);
 }
 
+@media(max-width:412px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        width: 100%;
+        /* height: 40px; */
+    }
+    .nav-1{
+        height: 60px;
+        width: 100%;
+        display: flex;
+    } 
+
+    .nav-1 .icon{
+        display: none;
+    }
+
+    .nav-1 h1{
+        font-size: 30px;
+        font-family: sans-serif;
+         /* margin-left: 150px; */
+        /* margin-right: 200px;  */
+    }
+    .nav-1 .btn{
+
+        height: 40px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        display: none; 
+    }
+    .nav-1 .btn form {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 28px;
+        width: 100px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        background-color: rgb(197, 211, 224);
+    }
+
+    .nav-1 .btn form input{
+        display: none;
+        border: none;
+        outline: none;
+        height: 38px;
+        width: 100px;
+        border-radius: 12px;
+        padding-left: 15px;
+        background-color: rgb(197, 211, 224);;
+    }
+
+    .nav-1 .btn form i{
+        position: absolute;
+        padding-right: 7px;
+        right: 0;
+        font-size: 10px;
+    }
+
+    .nav-2{
+        width: 100%;
+    }
+    .nav-2 ol{
+        position: fixed;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        gap: 15px;
+    }
+    .nav-2 ol li a{
+        font-size: 11px;
+        font-family: "Rubik",sans-serif;
+    }
 
 
+    main, footer{
+        display: none;
+    }
+}
+
+/* Main part */
+main{
+    height: 2500px;
+    margin-top: 80px;
+}
+
+.box figure{
+    text-align: center;
+}
+.box figure img{
+    height: 700px;
+    width: 1200px;
+    border-radius: 15px;
+    border: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.box figure figcaption{
+    text-align: center;
+}
+.box figure figcaption strong{
+    font-size: 42px;
+    font-family: "Rubik", sans-serif;
+}
+.box figure figcaption p{
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.wrapper-1 table{
+    margin-left: 140px;
+}
+.wrapper-1 h1{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: red;
+}
+table{
+    height: 700px;
+    width: 1200px;
+    text-align: center;
+}
+table thead tr th{
+    font-size: 35px;
+    font-family: sans-serif;
+    color: maroon;
+    font-weight: 700;
+}   
+
+table tbody tr td{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
 
 
 /* footer */
@@ -160,4 +307,23 @@ hr{
     align-items: center;
     padding: 15px;
     gap: 620px;
+}
+.footer-bottom .icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 165px;
+}
+
+.footer-bottom .icons i{
+    font-size: 22px;  
+}
+.footer-bottom .icons i:hover{
+    color: #C7C8CC;
+}
+
+.footer-bottom .cop strong{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
 }
