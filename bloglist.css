@@ -12,55 +12,51 @@ html,body{
     width: 100%;
 }
 
-header{
+header {
     height: 100px;
     width: 100%;
-    /* background-color: whitesmoke; */
-    background-color: #E3E1D9;
-    
-}
-
-.nav-1{
+    background-color: #e3e1d9;
+  }
+  .nav-1 {
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 15px;
-}
-.nav-1 .icon{
-    
+  }
+  .nav-1 p {
+    display: none;
+  }
+  .nav-1 .icon {
     height: 60px;
     width: 180px;
     display: flex;
     padding: 20px;
     gap: 22px;
-    /* background-color: blanchedalmond; */  
-}
-.nav-1 .icon i{
+  }
+  .nav-1 .icon i {
     font-size: 18px;
-}
-.nav-1 .icon i:hover{
-    /* color: #C7C8CC; */
-    color: #BFCFE7;
-}
-.nav-1 h1{
+  }
+  .nav-1 .icon i:hover {
+    color: #bfcfe7;
+  }
+  .nav-1 .menu-icon {
+      display: none;
+  }
+  .nav-1 h1 {
     font-size: 30px;
     font-family: sans-serif;
-    /* background-color: aqua; */
-    margin-left: 150px;
-    margin-right: 570px;
-}
-.nav-1 .btn{
+  }
+  .nav-1 .btn {
     height: 40px;
     width: 400px;
     display: flex;
     align-items: center;
     gap: 20px;
-    /* background-color: blue; */
-}
-
-
-.nav-1 .btn form {
+  }
+  
+  .nav-1 .btn form {
     display: flex;
     align-items: center;
     position: relative;
@@ -69,52 +65,146 @@ header{
     border-radius: 12px;
     border: none;
     outline: none;
-    /* padding: 10px; */
     background-color: rgb(197, 211, 224);
-    /* top: 0;
-    right: 0; */
-}
-
-.nav-1 .btn form input{
+  }
+  
+  .nav-1 .btn form input {
     border: none;
     outline: none;
     height: 38px;
     width: 275px;
     border-radius: 12px;
     padding-left: 15px;
-    background-color: rgb(197, 211, 224);;
-    
-}
-.nav-1 .btn form i{
+    background-color: rgb(197, 211, 224);
+  }
+  .nav-1 .btn form i {
     position: absolute;
     padding-right: 7px;
     right: 0;
     font-size: 18px;
-}
-
-
-.nav-2{
+  }
+  
+  .nav-2 {
     height: 40px;
     width: 100%;
-    /* background-color: whitesmoke; */
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .nav-2 ol {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
     gap: 50px;
-}
-
-.nav-2 a{
+  }
+  .nav-2 a {
     text-decoration: none;
     color: rgb(56, 54, 54);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 18px;
-}
-
-.nav-2 a:hover{
-    /* color: rgb(84, 84, 205); */
+  }
+  
+  .nav-2 a:hover {
     color: rgb(187, 116, 116);
-}
+  }
+  
+  @media(max-width: 412px){
+      
+      *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+  
+      header{
+          width: 100%;
+          height: 80px;
+      }
+      .nav-1{
+          height: 50px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 70px;
+      } 
+  
+      .nav-1 .icon{
+          display: none;
+      }
+      .nav-1 .menu-icon {
+          display: flex;
+      }
+  
+      .nav-1 h1{
+          font-size: 20px;
+          font-family: sans-serif;
+      }
+      .nav-1 .btn{
+          height: 40px;
+          width: 80px;
+          display: flex;
+          align-items: center;
+          /* gap: 20px; */
+          /* display: none;  */
+      }
+      .nav-1 .btn form {
+          display: flex;
+          align-items: center;
+          position: relative;
+          height: 30px;
+          width: 100px;
+          border-radius: 12px;
+          border: none;
+          outline: none;
+          background-color: rgb(197, 211, 224);
+      }
+  
+      .nav-1 .btn form input{
+          /* display: none; */
+          border: none;
+          outline: none;
+          height: 30px;
+          width: 100px;
+          border-radius: 12px;
+          padding-left: 15px;
+          background-color: rgb(197, 211, 224);;
+      }
+  
+      .nav-1 .btn form i{
+          position: absolute;
+          padding-right: 7px;
+          right: 0;
+          font-size: 10px;
+      }
+  
+      .nav-2{
+          width: 100%;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .nav-2 ol{
+          position: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 20px;
+          gap: 15px;
+      }
+      .nav-2 ol li a{
+          font-size: 10px;
+          font-family: "Rubik",sans-serif;
+      }
+  
+  
+      main, footer{
+          display: none;
+      }
+  }
 
 main{
     width: 100%;
@@ -127,11 +217,7 @@ section>h1{
     font-weight: 700;
     font-family: "Rubik", sans-serif;
 }
-section button{
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px; */
+section .btn{
     margin-top: 50px;
     height: 50px;
     width: 150px;
@@ -140,7 +226,7 @@ section button{
     border: hidden;
     padding: 5px;
 }
-section button:hover{
+section .btn:hover{
     color: #F4EDCC;
     background-color: rgb(187, 116, 116);
 }
@@ -159,56 +245,103 @@ section button strong{
 }
 
 .content .box{
+    height: 765px;
     padding: 5px;
     background-color: #F4EDCC;
-    width: 410px;
+    text-align: justify;
+    padding: 10px;
+    width: 450px;
 }
 .content .box a{
     text-decoration: none;
     color: black;
 }
 .content .box a strong{
-    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
     font-family: "Rubik", sans-serif;
+    font-weight: 600; 
+}
+.content .box figure figcaption a button{
+    margin-top: 30px;
+    height: 35px;
+    border-radius: 9px;
+    width: 100px;
+    font-size: 15px;
+    border: hidden;
+    outline: none;
+    background-color: #E3E1D9;
+}
+.content .box figure figcaption a button:hover{
+    color: #F4EDCC;
+    background-color: rgb(187, 116, 116);
 }
 
 .content .box figure img{
     height: 500px;
-    width: 400px;
+    width: 430px;
     border: hidden;
     border-radius: 9px;
     object-fit: cover;
     object-position: top;
 }
+.content .box figure figcaption{
+    padding: 10px;
+}
 .content .box figure figcaption p{
     font-size: 16px;
     font-family: "Rubik", sans-serif;
-    margin-top: 5px;
+    margin-top: 28px;
 }
 
 .content-1{
     margin-top: 50px;
     margin-bottom: 0px;
     width: 100%;
-    height: 560px;
-    /* background-color: black; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 80px;
 }
 .content-1 .box-1{
+    height: 780px;
     padding: 5px;
-    width: 510px;
+    width: 520px;
     background-color: #F4EDCC;
+    text-align: justify;
+    padding: 10px;
 }
-
+.content-1 .box-1 figure figcaption{
+    padding: 10px;
+}
+.content-1 .box-1 figure figcaption a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600; 
+}
 .content-1 .box-1 figure figcaption p{
     font-size: 16px;
     font-family: "Rubik", sans-serif;
-    margin-top: 5px;
+    margin-top: 28px;
 }
 
+.content-1 .box-1 figure figcaption a button{
+    margin-top: 30px;
+    height: 35px;
+    border-radius: 9px;
+    width: 100px;
+    font-size: 15px;
+    border: hidden;
+    outline: none;
+    background-color: #E3E1D9;
+}
+.content-1 .box-1 figure figcaption a button:hover{
+    color: #F4EDCC;
+    background-color: rgb(187, 116, 116);
+}
 
 .content-1 .box-1 figure img{
     
@@ -217,16 +350,9 @@ section button strong{
     border: hidden;
     border-radius: 9px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
-.content-1 .box-1 figure figcaption a{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
-    
-}
+
 
 /* content-2 */
 .content-2{
@@ -240,35 +366,54 @@ section button strong{
 }
 
 .content-2 .box{
+    height: 780px;
     padding: 5px;
     background-color: #F4EDCC;
-    width: 410px;
+    text-align: justify;
+    padding: 10px;
+    width: 450px;
+}
+.content-2 .box figure figcaption{
+    padding: 10px;
 }
 .content-2 .box a{
     text-decoration: none;
     color: black;
 }
 .content-2 .box a strong{
-    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
     font-family: "Rubik", sans-serif;
-
+    font-weight: 600; 
+}
+.content-2 .box figure figcaption a button{
+    margin-top: 30px;
+    height: 35px;
+    border-radius: 9px;
+    width: 100px;
+    font-size: 15px;
+    border: hidden;
+    outline: none;
+    background-color: #E3E1D9;
+}
+.content-2 .box figure figcaption a button:hover{
+    color: #F4EDCC;
+    background-color: rgb(187, 116, 116);
 }
 
 .content-2 .box figure img{
     height: 500px;
-    width: 400px;
+    width: 430px;
     border: hidden;
     border-radius: 9px;
     object-fit: cover;
     object-position: top;
 }
 .content-2 .box figure figcaption p{
-    text-decoration: none;
-    margin-top: 5px;
-    color: black;
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    margin-top: 28px;
 }
 
 
