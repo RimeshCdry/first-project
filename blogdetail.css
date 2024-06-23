@@ -20,46 +20,51 @@ header{
     
 }
 
-.nav-1{
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #e3e1d9;
+  }
+  .nav-1 {
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 15px;
-}
-.nav-1 .icon{
+  }
+  .nav-1 p {
+    display: none;
+  }
+  .nav-1 .icon {
     height: 60px;
     width: 180px;
     display: flex;
     padding: 20px;
     gap: 22px;
-    /* background-color: blanchedalmond; */  
-}
-.nav-1 .icon i{
+  }
+  .nav-1 .icon i {
     font-size: 18px;
-}
-.nav-1 .icon i:hover{
-    /* color: #C7C8CC; */
-    color: #BFCFE7;
-}
-.nav-1 h1{
+  }
+  .nav-1 .icon i:hover {
+    color: #bfcfe7;
+  }
+  .nav-1 .menu-icon {
+      display: none;
+  }
+  .nav-1 h1 {
     font-size: 30px;
     font-family: sans-serif;
-    /* background-color: aqua; */
-    margin-left: 150px;
-    margin-right: 570px;
-}
-.nav-1 .btn{
+  }
+  .nav-1 .btn {
     height: 40px;
     width: 400px;
     display: flex;
     align-items: center;
     gap: 20px;
-    /* background-color: blue; */
-}
-
-
-.nav-1 .btn form {
+  }
+  
+  .nav-1 .btn form {
     display: flex;
     align-items: center;
     position: relative;
@@ -68,144 +73,146 @@ header{
     border-radius: 12px;
     border: none;
     outline: none;
-    /* padding: 10px; */
     background-color: rgb(197, 211, 224);
-    /* top: 0;
-    right: 0; */
-}
-
-.nav-1 .btn form input{
+  }
+  
+  .nav-1 .btn form input {
     border: none;
     outline: none;
     height: 38px;
     width: 275px;
     border-radius: 12px;
     padding-left: 15px;
-    background-color: rgb(197, 211, 224);;
-    
-}
-.nav-1 .btn form i{
+    background-color: rgb(197, 211, 224);
+  }
+  .nav-1 .btn form i {
     position: absolute;
     padding-right: 7px;
     right: 0;
     font-size: 18px;
-}
-
-
-.nav-2{
+  }
+  
+  .nav-2 {
     height: 40px;
     width: 100%;
-    /* background-color: whitesmoke; */
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
-.nav-2 ol{
+  }
+  .nav-2 ol {
     list-style-type: none;
     display: flex;
     align-items: center;
     gap: 50px;
-}
-
-.nav-2 a{
+  }
+  .nav-2 a {
     text-decoration: none;
     color: rgb(56, 54, 54);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 18px;
-}
-
-.nav-2 a:hover{
-    /* color: rgb(84, 84, 205); */
+  }
+  
+  .nav-2 a:hover {
     color: rgb(187, 116, 116);
-}
-
-@media(max-width:412px){
-    *{
-        padding: 0;
-        margin: 0;
-    }
-
-    header{
-        width: 100%;
-        /* height: 40px; */
-    }
-    .nav-1{
-        height: 60px;
-        width: 100%;
-        display: flex;
-    } 
-
-    .nav-1 .icon{
-        display: none;
-    }
-
-    .nav-1 h1{
-        font-size: 30px;
-        font-family: sans-serif;
-         /* margin-left: 150px; */
-        /* margin-right: 200px;  */
-    }
-    .nav-1 .btn{
-
-        height: 40px;
-        width: 100px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        display: none; 
-    }
-    .nav-1 .btn form {
-        display: flex;
-        align-items: center;
-        position: relative;
-        height: 28px;
-        width: 100px;
-        border-radius: 12px;
-        border: none;
-        outline: none;
-        background-color: rgb(197, 211, 224);
-    }
-
-    .nav-1 .btn form input{
-        display: none;
-        border: none;
-        outline: none;
-        height: 38px;
-        width: 100px;
-        border-radius: 12px;
-        padding-left: 15px;
-        background-color: rgb(197, 211, 224);;
-    }
-
-    .nav-1 .btn form i{
-        position: absolute;
-        padding-right: 7px;
-        right: 0;
-        font-size: 10px;
-    }
-
-    .nav-2{
-        width: 100%;
-    }
-    .nav-2 ol{
-        position: fixed;
-        justify-content: center;
-        width: 100%;
-        height: 40px;
-        gap: 15px;
-    }
-    .nav-2 ol li a{
-        font-size: 11px;
-        font-family: "Rubik",sans-serif;
-    }
-
-
-    main, footer{
-        display: none;
-    }
-}
+  }
+  
+  @media(max-width: 412px){
+      
+      *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+  
+      header{
+          width: 100%;
+          height: 80px;
+      }
+      .nav-1{
+          height: 50px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 70px;
+      } 
+  
+      .nav-1 .icon{
+          display: none;
+      }
+      .nav-1 .menu-icon {
+          display: flex;
+      }
+  
+      .nav-1 h1{
+          font-size: 20px;
+          font-family: sans-serif;
+      }
+      .nav-1 .btn{
+          height: 40px;
+          width: 80px;
+          display: flex;
+          align-items: center;
+          /* gap: 20px; */
+          /* display: none;  */
+      }
+      .nav-1 .btn form {
+          display: flex;
+          align-items: center;
+          position: relative;
+          height: 30px;
+          width: 100px;
+          border-radius: 12px;
+          border: none;
+          outline: none;
+          background-color: rgb(197, 211, 224);
+      }
+  
+      .nav-1 .btn form input{
+          /* display: none; */
+          border: none;
+          outline: none;
+          height: 30px;
+          width: 100px;
+          border-radius: 12px;
+          padding-left: 15px;
+          background-color: rgb(197, 211, 224);;
+      }
+  
+      .nav-1 .btn form i{
+          position: absolute;
+          padding-right: 7px;
+          right: 0;
+          font-size: 10px;
+      }
+  
+      .nav-2{
+          width: 100%;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .nav-2 ol{
+          position: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 20px;
+          gap: 15px;
+      }
+      .nav-2 ol li a{
+          font-size: 10px;
+          font-family: "Rubik",sans-serif;
+      }
+  
+  
+      main, footer{
+          display: none;
+      }
+  }
 
 /* Main part */
 main{

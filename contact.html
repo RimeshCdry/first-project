@@ -55,6 +55,9 @@
                 <i class="fa-brands fa-pinterest-p"></i>
                 <i class="fa-brands fa-youtube"></i>
             </div>
+            <div class="menu-icon">
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
 
         </nav>
 
@@ -75,24 +78,24 @@
         <div class="contact-box">
             <div class="contact-left">
                 <h3>Sent your request</h3>
-                <form action="#" method="post" name="contact">
+                <form action="#" method="POST" name="contact" novalidate>
 
                     <div class="input-row">
                         <div class="input-group">
                             <label>Full Name</label>
-                            <input type="text" placeholder="John Amendo" id="fname" name="fname" value="">
+                            <input type="text" placeholder="John Amendo" id="fname" name="fname" value="" required>
                         </div>
 
                         <div class="input-group">
                             <label>Phone</label>
-                            <input type="text" placeholder="+977 9805637530" id="Phone" name="Phone" value="">
+                            <input type="text" placeholder="+977 9805637530" id="phone" name="phone" value="">
                         </div> 
                     </div>
 
                     <div class="input-row">
                         <div class="input-group">
                             <label>Email</label>
-                            <input type="email" placeholder="xyz@gmail.com" id="Email" name="Email" value="">
+                            <input type="email" placeholder="xyz@gmail.com" id="email" name="email" value="">
                         </div>
 
                         <div class="input-group">
@@ -184,7 +187,9 @@
         <strong>&trade; All Right Reserved by Rimesh Chaudhary</strong>
       </div>
     </div>
+   
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
